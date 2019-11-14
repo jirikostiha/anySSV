@@ -1,0 +1,125 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <BaseIntermediateOutputPath>..\..\bin\$(MSBuildProjectName)\obj\$(Platform)\$(Configuration)</BaseIntermediateOutputPath>
+    <IsPackable>false</IsPackable>
+
+    <RootNamespace>Wayout.Ssv</RootNamespace>
+
+    <AssemblyName>Wayout.Ssv_Quality</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\..\bin\$(MSBuildProjectName)\bin\$(Platform)\$(Configuration)\</OutputPath>
+    <CodeAnalysisRuleSet />
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <CodeAnalysisRuleSet />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="obj\**" />
+    <EmbeddedResource Remove="obj\**" />
+    <None Remove="obj\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Quality\data\multitable-column_exclusions-[1]-valid.ssv" />
+    <None Remove="Quality\data\multitable-line_exclusions-[1]valid.ssv" />
+    <None Remove="Quality\data\multitable-[1]-valid.ssv" />
+    <None Remove="Quality\data\singletable-data_only-[1]-valid.csv" />
+    <None Remove="Quality\data\singletable-data_only-[2]-valid.ssv" />
+    <None Remove="Quality\data\singletable-header-[1]-valid.ssv" />
+    <None Remove="Quality\data\singletable-header-[2]-valid.ssv" />
+    <None Remove="Quality\data\singletable-header-[3]-valid.ssv" />
+    <None Remove="Quality\data\singletable-header-[4]-valid.ssv" />
+    <None Remove="Quality\data\singletable-header-[5]-valid.ssv" />
+    <None Remove="Quality\data\singletable-header-[6]-valid.ssv" />
+    <None Remove="Quality\data\singletable-header-[7]-valid.ssv" />
+    <None Remove="Quality\data\singletable-header-[8]-valid.ssv" />
+    <None Remove="Quality\data\singletable-name,header,wide_delim-[1]-valid.ssv" />
+    <None Remove="Quality\data\singletable-name,header,wide_delim-[2]-valid.ssv" />
+    <None Remove="Quality\data\singletable-name,header-[1]-valid.ssv" />
+    <None Remove="Quality\data\singletable-name-[1]-valid.ssv" />
+    <None Remove="Quality\data\singletable-name-[2]-valid.ssv" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Quality\data\singletable-name,header,wide_delim-[1]-valid.ssv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Quality\data\singletable-name,header,wide_delim-[2]-valid.ssv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Quality\data\singletable-header-[8]-valid.ssv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Quality\data\singletable-header-[7]-valid.ssv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Quality\data\singletable-name,header-[1]-valid.ssv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Quality\data\singletable-data_only-[2]-valid.ssv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Quality\data\singletable-header-[6]-valid.ssv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Quality\data\singletable-header-[5]-valid.ssv" />
+    <Content Include="Quality\data\singletable-header-[4]-valid.ssv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Quality\data\singletable-header-[3]-valid.ssv" />
+    <Content Include="Quality\data\singletable-header-[2]-valid.ssv" />
+    <Content Include="Quality\data\singletable-name-[2]-valid.ssv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Quality\data\multitable-[1]-valid.ssv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Quality\data\multitable-column_exclusions-[1]-valid.ssv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Quality\data\multitable-line_exclusions-[1]valid.ssv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Quality\data\singletable-data_only-[1]-valid.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Quality\data\singletable-header-[1]-valid.ssv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Quality\data\singletable-name-[1]-valid.ssv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.7.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.2.1" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IJKD.Ssv\IJKD.Ssv.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Quality\data\singletable-header-[5]-valid.ssv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Quality\data\singletable-header-[3]-valid.ssv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Quality\data\singletable-header-[2]-valid.ssv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

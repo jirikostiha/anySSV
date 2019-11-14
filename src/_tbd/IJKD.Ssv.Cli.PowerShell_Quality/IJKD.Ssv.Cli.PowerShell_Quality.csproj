@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+
+    <RootNamespace>Wayout.Ssv.Cli.PowerShell</RootNamespace>
+
+    <AssemblyName>Wayout.Ssv.Cli.PowerShell_Quality</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.3.2" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IJKD.Ssv.Cli.PowerShell\IJKD.Ssv.Cli.PowerShell.csproj" />
+  </ItemGroup>
+
+</Project>

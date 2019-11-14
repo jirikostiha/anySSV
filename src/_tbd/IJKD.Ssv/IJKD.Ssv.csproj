@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <BaseIntermediateOutputPath>..\..\bin\$(MSBuildProjectName)\obj\$(Platform)\$(Configuration)</BaseIntermediateOutputPath>
+    <AssemblyName>Wayout.Ssv</AssemblyName>
+    <RootNamespace>Wayout.Ssv</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\..\bin\$(MSBuildProjectName)\bin\$(Platform)\$(Configuration)\</OutputPath>
+    <CodeAnalysisRuleSet />
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <CodeAnalysisRuleSet />
+  </PropertyGroup>
+
+  
+  <ItemGroup>
+    <Compile Remove="obj\**" />
+    <EmbeddedResource Remove="obj\**" />
+    <None Remove="obj\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Csv2.Parser%28T%29.cs" />
+  </ItemGroup>
+
+</Project>
