@@ -1,10 +1,10 @@
-﻿namespace Wayout.Ssv.Cli.PowerShell
+﻿namespace Wayout.AnySsv.Cli.PowerShell
 {
     using System.Management.Automation;
 
     //https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/import-csv?view=powershell-6  
 
-    [Cmdlet(VerbsData.Import, "Ssv")]
+    [Cmdlet(VerbsData.Import, "AnySsv")]
     public class ImportSsvCommand : PSCmdlet
     {
         [Parameter(Mandatory = true)]

@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wayout.AnySsv", "AnySsv\Way
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wayout.AnySsv_Quality", "Quality\Wayout.AnySsv_Quality.csproj", "{1732DDFF-0596-4EA0-86FC-FCCD304B2A8F}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wayout.AnySsv.Cli.PowerShell", "Cli.PowerShell\Wayout.AnySsv.Cli.PowerShell.csproj", "{BDDC7014-66B0-4EE5-A37E-D36A8F00DDE4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{1732DDFF-0596-4EA0-86FC-FCCD304B2A8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1732DDFF-0596-4EA0-86FC-FCCD304B2A8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1732DDFF-0596-4EA0-86FC-FCCD304B2A8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDDC7014-66B0-4EE5-A37E-D36A8F00DDE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDDC7014-66B0-4EE5-A37E-D36A8F00DDE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDDC7014-66B0-4EE5-A37E-D36A8F00DDE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDDC7014-66B0-4EE5-A37E-D36A8F00DDE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

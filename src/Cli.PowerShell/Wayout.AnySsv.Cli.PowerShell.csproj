@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\organization.props" />
+  <Import Project="..\..\product.props" />
+  <Import Project="..\..\product_version.props" />
+  <Import Project="..\..\participants.props" />
+  <Import Project="..\nuget.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Management.Automation" Version="6.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AnySsv\Wayout.AnySsv.csproj" />
+  </ItemGroup>
+
+</Project>
