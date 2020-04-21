@@ -5,7 +5,7 @@
     using System.IO;
     using System.Linq;
 
-    internal static class ContentHelper
+    public static class ContentHelper
     {
         public static string RootDataFolder => Path.Combine("Quality", "data");
 

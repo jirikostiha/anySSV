@@ -3,9 +3,10 @@
     using System.Management.Automation;
 
     //https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/import-csv?view=powershell-6  
+    //https://www.hanselman.com/blog/TestingPowerShellScriptsWithNUnit.aspx
 
     [Cmdlet(VerbsData.Import, "AnySsv")]
-    public class ImportSsvCommand : PSCmdlet
+    public class ImportSsvCommand : Cmdlet
     {
         [Parameter(Mandatory = true)]
         [Alias("lp")]
